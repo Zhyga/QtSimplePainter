@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>res/close-icon.png</file>
+        <file>res/line-icon.png</file>
+        <file>res/square-icon.png</file>
+        <file>res/triangle-icon.png</file>
+        <file>res/circle-png.png</file>
+        <file>res/hand-icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active/>
+    <inactive/>
+    <disabled/>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="PrintWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>543</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,204,163);</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="tBarSquare"/>
+   <addaction name="tBarCircle"/>
+   <addaction name="tBarTriangle"/>
+   <addaction name="separator"/>
+   <addaction name="tBarLine"/>
+   <addaction name="tBarMove"/>
+   <addaction name="separator"/>
+   <addaction name="tBarQuit"/>
+  </widget>
+  <action name="tBarSquare">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/square-icon.png</normaloff>:/image/res/square-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Квадрат</string>
+   </property>
+   <property name="toolTip">
+    <string>Квадрат</string>
+   </property>
+  </action>
+  <action name="tBarCircle">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/circle-png.png</normaloff>:/image/res/circle-png.png</iconset>
+   </property>
+   <property name="text">
+    <string>Круг</string>
+   </property>
+   <property name="toolTip">
+    <string>Круг</string>
+   </property>
+  </action>
+  <action name="tBarTriangle">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/triangle-icon.png</normaloff>:/image/res/triangle-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Треугольник</string>
+   </property>
+   <property name="toolTip">
+    <string>Треугольник</string>
+   </property>
+  </action>
+  <action name="tBarLine">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/line-icon.png</normaloff>:/image/res/line-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Линия</string>
+   </property>
+   <property name="toolTip">
+    <string>Линия</string>
+   </property>
+  </action>
+  <action name="tBarMove">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/hand-icon.png</normaloff>:/image/res/hand-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Перемещение</string>
+   </property>
+   <property name="toolTip">
+    <string>Перемещение</string>
+   </property>
+  </action>
+  <action name="tBarQuit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/image/res/close-icon.png</normaloff>:/image/res/close-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="toolTip">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
